@@ -1,0 +1,117 @@
+DEPENDENCIES
+  apache2
+    git: git://github.com/MiniCodeMonkey/apache24
+    revision: 2ce633119d636fc5392016228e79ba5a1c0bfc40
+  apt
+  beanstalk_console
+    git: git://github.com/MiniCodeMonkey/chef-beanstalk_console
+    revision: be9f0449d86b7398b525720659071f42f2e64eb2
+  beanstalkd
+    git: git://github.com/escapestudios/chef-beanstalkd
+    revision: 3f22991e7bb22822aa2e776c73772957d3a8b9c3
+  build-essential
+  chef-php-extra
+    git: git://github.com/inviqa/chef-php-extra
+    revision: 8c8cbf4ea4e4313e1bf336a8a7ea3775c1cbe84d
+  laravel
+    git: git://github.com/MiniCodeMonkey/chef-laravel
+    revision: bcd6eacddc01c50ecbed074250155b9288418fa4
+  memcached
+  mysql
+  npm
+    git: git://github.com/balbeko/chef-npm
+    revision: 83d8f655b41e6d646dc3ca8a81355e96a36cde69
+  openssl
+  php
+  phpunit
+    git: git://github.com/escapestudios/chef-phpunit
+    revision: 47e5b491572eecaea49824ba5b2421cd0d90f64a
+  postfix
+  postgresql
+    git: git://github.com/phlipper/chef-postgresql
+    revision: d4d5394f4f6ab3e512742cde07d875e6042d3ab6
+  redisio
+    git: git://github.com/brianbianco/redisio
+    revision: 2b7fc068417fb95758b07bc4f6e3c4a450419812
+
+GRAPH
+  apache (0.0.5)
+    apache2 (>= 0.0.0)
+  apache2 (1.8.0)
+  apt (2.4.0)
+  beanstalk_console (0.1.0)
+    apache (>= 0.0.0)
+  beanstalkd (0.1.3)
+    php (>= 0.0.0)
+    python (>= 0.0.0)
+  build-essential (2.0.4)
+  chef-php-extra (0.4.1)
+    apt (>= 1.8.4)
+    git (>= 1.0.0)
+    php (= 1.1.8)
+    yum (>= 0.8.0)
+  chef-sugar (2.0.0)
+  chef_handler (1.1.6)
+  composer (1.0.3)
+    php (>= 0.0.0)
+    windows (>= 0.0.0)
+  dmg (2.2.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  laravel (1.0.0)
+    apache (>= 0.0.0)
+    apt (>= 0.0.0)
+    chef-php-extra (>= 0.0.0)
+    mysql (>= 0.0.0)
+    npm (>= 0.0.0)
+    openssl (>= 0.0.0)
+    php (>= 0.0.0)
+  memcached (1.7.2)
+    runit (~> 1.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  mysql (5.3.4)
+    yum-mysql-community (>= 0.0.0)
+  nodejs (1.3.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
+  npm (0.1.5)
+    nodejs (>= 0.0.0)
+  openssl (2.0.0)
+    chef-sugar (>= 0.0.0)
+  php (1.1.8)
+    build-essential (>= 0.0.0)
+    mysql (>= 0.0.0)
+    xml (>= 0.0.0)
+  phpunit (1.0.2)
+    composer (>= 0.0.0)
+    git (>= 0.0.0)
+    php (>= 0.0.0)
+  postfix (3.3.1)
+  postgresql (0.14.0)
+    apt (>= 1.9.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  redisio (1.7.1)
+    ulimit (>= 0.1.2)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  ulimit (0.3.2)
+  windows (1.31.0)
+    chef_handler (>= 0.0.0)
+  xml (1.2.4)
+    build-essential (>= 0.0.0)
+  yum (3.2.2)
+  yum-epel (0.3.6)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.6)
+    yum (>= 3.0.0)
